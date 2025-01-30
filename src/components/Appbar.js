@@ -48,7 +48,7 @@ export default function Appbar({ courses }) {
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/coursehub/login');
   };
 
 
@@ -91,6 +91,13 @@ export default function Appbar({ courses }) {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Link to="coursehub/admin" >
+                  <Button variant="outlined" size="small" color="white">
+                    Admin
+                  </Button>
+                </Link>
+          </Box>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {loggedIn ? (
               <>
                 <Button variant="outlined" size="small" color="white" onClick={handleLogout}>
@@ -98,7 +105,7 @@ export default function Appbar({ courses }) {
                   </Button>
               </>
             ) : (
-                <Link to="/login" >
+                <Link to="/coursehub/login" >
                   <Button variant="outlined" size="small" color="white">
                     Log In
                   </Button>

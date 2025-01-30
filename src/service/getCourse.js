@@ -1,7 +1,7 @@
 import api from './Api';
 
 const getCourse = async (courseNumber) => {
-    return api.get(`https://cs-gmu-courses.onrender.com/CS/Courses/${courseNumber}`)
+    return api.get(`https://nk8spmytaz.us-east-1.awsapprunner.com/CS/Courses/${courseNumber}`)
         .then(response => response.data)
         .catch(error => {
             console.log('Error fetching course data', error);

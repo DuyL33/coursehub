@@ -2,7 +2,7 @@
 
   const handleLogin = async ({username, password}) => {
     try {
-      return await fetch('https://cs-gmu-courses.onrender.com/CS/auth/signin', {
+      return await fetch('https://nk8spmytaz.us-east-1.awsapprunner.com/CS/auth/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

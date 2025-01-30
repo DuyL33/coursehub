@@ -12,7 +12,7 @@ const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const signin = async ({ username, password }) => {
+  const signin = async ( { username, password }) => {
     try {
       const response = await handleLogin({ username, password });
   
@@ -25,7 +25,7 @@ const Login = () => {
         }
       }
   
-      const data = await response.json(); // Parse JSON only if the request was successful
+      const data = await response.json();
       const token = data.accessToken;
       const roles = data.roles;
   
@@ -37,7 +37,7 @@ const Login = () => {
       console.log('Login successful');
     } catch (error) {
       console.error('Error during login:', error.message);
-      setError(error.message); // Display appropriate error message
+      setError(error.message);
     }
   };
   

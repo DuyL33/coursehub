@@ -27,7 +27,7 @@ const AdminPage = ({ courses, getCourses }) => {
       Admin page
       <Paper sx={{ height: 700, width: '100%' }}>
         <DataGrid
-          rows={coursesWithIds} // Use coursesWithIds that has unique 'id'
+          rows={coursesWithIds}
           columns={columns}
           initialState={{ pagination: { paginationModel } }}
           pageSizeOptions={[5, 10]}

@@ -33,6 +33,7 @@ const CourseCard = ({ course }) => {
           DIFFICULTY
         </Typography>
         <DifficultyAvatar difficulty={averageDiff} size={42} />
+
       </CardContent>
     </Card>
   );

@@ -23,6 +23,7 @@ const theme = createTheme({
     white: {
       main: '#FFFFFF',
     }
+
   },
 });
 
@@ -55,8 +56,8 @@ function AppContent() {
         <Routes>
           <Route path="/coursehub" element={<CourseList courses={courses} />} />
           <Route path="/coursehub/:courseNumber" element={<CourseDetails />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<AdminPage courses={courses} getCourses={getCourses} />} />
+          <Route path="/coursehub/login" element={<Login />} />
+          <Route path="/coursehub/admin" element={<AdminPage courses={courses} getCourses={getCourses} />} />
         </Routes>
       </div>
     </>

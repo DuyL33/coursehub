@@ -99,14 +99,13 @@ const CourseDetail = () => {
 
               <Grid item xs={1} md={1}>
 
-                <Typography style={{ fontSize: '0.5rem', fontWeight: 'bold' }} variant="caption" gutterBottom>
+                <Typography variant="caption" gutterBottom>
                   DIFFICULTY
-                      </Typography>
+                </Typography>
                 <DifficultyAvatar difficulty={parseInt(review.difficulty, 10)} size={42} />
-
-                <Typography style={{ fontSize: '0.5rem', fontWeight: 'bold' }} variant="caption" gutterBottom>
+                <Typography variant="caption" gutterBottom>
                   WORK
-                      </Typography>
+                </Typography>
                 <DifficultyAvatar difficulty={parseInt(review.courseWork, 10)} size={42} />
 
               </Grid>

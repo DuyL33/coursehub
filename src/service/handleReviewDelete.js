@@ -3,7 +3,7 @@ const handleDeleteReview = async (createdTime) => {
     try {
         const token = localStorage.getItem('jwt');
 
-        return await fetch(`https://cs-gmu-courses.onrender.com/CS/Courses/Review/${encodeURIComponent(createdTime)}`, {
+        return await fetch(`https://nk8spmytaz.us-east-1.awsapprunner.com/CS/Courses/Review/${encodeURIComponent(createdTime)}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
